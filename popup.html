@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lead Generation Goal Calculator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lead Generation Goal Calculator</h1>
+    <div class="calculator">
+      <div class="input-group">
+        <label for="expectedRevenue">Expected Revenue:</label>
+        <div class="input-with-symbol">
+          <span>$</span>
+          <input type="number" id="expectedRevenue" placeholder="100.01">
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="averageTicket">Average Ticket:</label>
+        <div class="input-with-symbol">
+          <span>$</span>
+          <input type="number" id="averageTicket" placeholder="10">
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="conversionRate">Conversion Rate:</label>
+        <div class="input-with-symbol">
+          <input type="number" id="conversionRate" placeholder="100">
+          <span>%</span>
+        </div>
+      </div>
+      <button id="calculateButton">Calculate!</button>
+      <p class="note">Please do not include $, %, commas, or other signs in your answers.</p>
+      <div id="result" class="result"></div>
+
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
